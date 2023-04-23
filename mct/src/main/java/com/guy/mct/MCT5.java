@@ -31,6 +31,9 @@ public class MCT5 {
             or you can close it by yourself:
                 MCT5.get().remove(cycleTicker);
 
+            you can remove multiple calls by usong tags
+                MCT5.get().removeAllByTag("Main_Activity");
+
           + Number of repeats must be more than 0 or the timer doesn't start.
           + You can run the timer continuously if you sent MCT5.CONTINUOUSLY_REPEATS instead of a number
           + This module support more than one of the same callback
@@ -221,4 +224,6 @@ public class MCT5 {
             }
         }
     }
+
+
 }

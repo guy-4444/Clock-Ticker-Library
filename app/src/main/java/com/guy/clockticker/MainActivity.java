@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MCT5.initHelper();
-
         MCT5.get().cycle(new MCT5.CycleTicker() {
             @Override
             public void secondly(int repeatsRemaining) {
